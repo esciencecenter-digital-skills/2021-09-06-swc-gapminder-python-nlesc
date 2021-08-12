@@ -384,6 +384,8 @@ how one of these schedule tables is constructed.
 
 <hr/>
 
+<h2 id="syllabus">Syllabus</h2>
+{% include swc/syllabus.html %}
 
 {% comment %}
 SETUP
