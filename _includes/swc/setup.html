@@ -7,6 +7,7 @@
 {% endcomment %}
 {% assign info = site.data.data[0] %}
 {% include install_instructions/shell.html %}
+{% include install_instructions/data_shell.html %}
 {% include install_instructions/git.html %}
 {% include install_instructions/editor.html %}
 
@@ -14,12 +15,14 @@
 {% include install_instructions/r.html %}
 {% elsif info.flavor == "python" %}
 {% include install_instructions/python.html %}
+{% include install_instructions/data_gapminder_python.html %}
 {% elsif info.flavor == "FIXME" %}
 {% include install_instructions/r.html %}
 {% include install_instructions/python.html %}
 {% else %}
 {% include warning-flavor.html %}
 {% endif %}
+
 
 {% comment %}
 The following setup instructions are commented out because Carpentries workshops
